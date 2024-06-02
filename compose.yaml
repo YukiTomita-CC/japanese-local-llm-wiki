@@ -1,0 +1,10 @@
+services:
+  jallow:
+    build: .
+    volumes: 
+      - .:/usr/src/app
+    command: npm run start -- --host 0.0.0.0
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
