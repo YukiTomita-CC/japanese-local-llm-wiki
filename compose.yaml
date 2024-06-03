@@ -3,7 +3,7 @@ services:
     build: .
     volumes: 
       - .:/usr/src/app
-    command: npm run start -- --host 0.0.0.0
+    command: WATCHPACK_POLLING=true npm run start -- --host 0.0.0.0
     ports:
       - "3000:3000"
     environment:
