@@ -23,10 +23,15 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl:
-            'https://github.com/YukiTomita-CC/japanese-local-llm-wiki/tree/main/',
+          editUrl: 'https://github.com/YukiTomita-CC/japanese-local-llm-wiki/tree/main/',
         },
-        blog: false,
+        blog: {
+          path: 'insights',
+          editUrl: 'https://github.com/YukiTomita-CC/japanese-local-llm-wiki/tree/main/',
+          blogTitle: 'Insights',
+          blogSidebarCount: 'ALL',
+          routeBasePath: 'insights'
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -51,6 +56,13 @@ const config: Config = {
           label: 'Docs',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Tried it!',
+        },
+        {to: '/insights', label: 'Insights', position: 'left'},
+        {
           href: 'https://github.com/YukiTomita-CC/japanese-local-llm-wiki',
           label: 'GitHub',
           position: 'right',
@@ -61,7 +73,7 @@ const config: Config = {
       style: 'dark',
       links: [
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Japanese Local LLM Wiki, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Japanese Local LLM Wiki. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
