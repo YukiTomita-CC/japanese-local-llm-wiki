@@ -51,13 +51,19 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docs',
           position: 'left',
           label: 'Docs',
         },
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'handson',
+          position: 'left',
+          label: 'Hands-on',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'triedit',
           position: 'left',
           label: 'Tried it!',
         },
