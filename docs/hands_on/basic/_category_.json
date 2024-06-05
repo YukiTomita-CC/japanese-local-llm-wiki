@@ -1,0 +1,9 @@
+{
+  "label": "Basic",
+  "position": 1,
+  "collapsible": false,
+  "link": {
+    "type": "generated-index",
+    "description": "ここではベースとなる推論やファインチューニング、量子化の実践を紹介します"
+  }
+}
